@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# Card visualizer made in REACT.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![img](https://github.com/toondark/card-page/assets/159065167/9b8528f8-53ac-4e21-9921-c448a74baade)
+
 
 ## Available Scripts
 
