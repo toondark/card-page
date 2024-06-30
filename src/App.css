@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body {
+  font-size: 18px;
+  background-color: #f5f6f7;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  max-width: 940px; /*Ancho maximo adaptable en tamaño de ventana*/
+  font-size: 2.5em; /*Tamaño relativo al tamaño del contenedor*/
+  font-family: Lato,sans-serif;
+  font-weight: 700; /* Grosor de la letra*/
+  line-height: 1.1; /*Separacion entre lineas*/
+  margin: 40px 0; /*Margen superior inferior 40 e izq y der 0*/ 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  min-height: 100vh; /*Esto hace que tome el 100% del  tamaño vertical del navegador*/
+  display: flex; /*Es una forma referente al flexbox que define su ubicacion*/
+  flex-wrap: wrap; /*Acomoda los elementos uno por debajo dle otro*/
+  align-items: center; /*Esto alinea los objetos al centro*/
+  justify-content: center; /*Texto alineado al centro */
+}
+
+.contenedor-principal {
+  min-height: 600px; /*Se adapta cuando se estira al usar min*/
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+.loguito {
+  max-height: 100px;
+  display: flex;
+  margin-right: 1%;
+  margin-top: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 600px){
+  
+  body{
+    background-color: rgba(50, 60, 70, 80);
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
+} 
+
